@@ -1,0 +1,13 @@
+server:
+  port: 9003
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
+
+spring:
+  application:
+    name: noodle-backend
+  cloud:
+    config:
+      profile: dev
