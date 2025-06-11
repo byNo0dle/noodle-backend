@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.UUID;
 
 @Data
@@ -40,7 +40,7 @@ public class Customer {
 
     @JsonProperty("birth_date")
     @Column(name = "birth_date", nullable = false)
-    private Date birthdate;
+    private LocalDate birthdate;
 
     @JsonProperty("cell_phone_number")
     @Column(name = "cell_phone_number", nullable = false)
